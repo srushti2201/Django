@@ -4,5 +4,8 @@ from .models import Book
 #Create your views here.
 def index(request):
     book_list=Book.objects.all()
-    return HttpResponse(book_list)
+    context={
+        "book_list":book_list
+    }
+    return render(request,"Myapp/index.html",context)
 
