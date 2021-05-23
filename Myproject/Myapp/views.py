@@ -9,3 +9,7 @@ def index(request):
     }
     return render(request,"Myapp/index.html",context)
 
+
+def detail(request,id):
+    return HttpResponse("This is my book number %s" %id)    
+
