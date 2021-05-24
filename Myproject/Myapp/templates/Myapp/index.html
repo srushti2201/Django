@@ -6,7 +6,7 @@
 </head>
 <body>
     {% for Book in book_list %}
-    {{Book.name}}--->{{Book.desc}}--->{{Book.price}} <br>
+    <a href="/book/{{Book.id}}"> {{Book.name}} </a> <br>
     {% endfor %}
 </body>
 </html>
